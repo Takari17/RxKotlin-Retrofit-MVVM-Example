@@ -16,7 +16,7 @@ class UserDataViewModel : ViewModel() {
     private val networkCallSuccess = MutableLiveData<Boolean>()
 
     fun executeNetworkCall() =
-        repository.executeNetworkCall()
+        repository.getAllUserData
             .subscribeBy(
                 onSuccess = { userData ->
                     userDataList.postValue(userData)

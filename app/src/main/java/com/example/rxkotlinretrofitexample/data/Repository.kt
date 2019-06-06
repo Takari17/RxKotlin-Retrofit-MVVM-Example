@@ -6,9 +6,8 @@ import io.reactivex.Single
 import io.reactivex.schedulers.Schedulers
 
 
-class Repository(private val api: JsonPlaceHolderApi) {
+class Repository(api: JsonPlaceHolderApi) {
 
-    fun executeNetworkCall(): Single<List<UserData>> =
-        api.getAllUserData()
-            .subscribeOn(Schedulers.io())
+    val getAllUserData: Single<List<UserData>> = api.getAllUserData()
+        .subscribeOn(Schedulers.io())
 }
