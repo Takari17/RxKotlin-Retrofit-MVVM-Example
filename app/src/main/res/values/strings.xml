@@ -17,4 +17,7 @@
 
     <string name="catch_phrase">Website: %1$s</string>
 
+    <string name="noConnection">No Connection ;(</string>
+
+
 ]</resources>

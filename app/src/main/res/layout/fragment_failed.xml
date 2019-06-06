@@ -8,7 +8,7 @@
         android:id="@+id/frameLayout2">
     <TextView
 
-            android:text="No Connection ;("
+            android:text="@string/noConnection"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#D10A0A"
