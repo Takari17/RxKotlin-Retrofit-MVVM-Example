@@ -12,8 +12,8 @@ import com.example.rxkotlinretrofitexample.utils.*
 import kotlinx.android.synthetic.main.recycler_view_layout.view.*
 
 
-class MyAdapter(private val userData: List<UserData>, private val context: Context) :
-    RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
+class UserDataAdapter(private val userData: List<UserData>, private val context: Context) :
+    RecyclerView.Adapter<UserDataAdapter.MyViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.recycler_view_layout, parent, false)
@@ -25,14 +25,17 @@ class MyAdapter(private val userData: List<UserData>, private val context: Conte
     // Maybe I should of used Data Binding...
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
 
-        holder.id.text = context.getString(R.string.id, userData.getId(position))
-        holder.name.text = context.getString(R.string.name, userData.getName(position))
-        holder.userName.text = context.getString(R.string.user_name, userData.getUserName(position))
-        holder.email.text = context.getString(R.string.email, userData.getEmail(position))
-        holder.phone.text = context.getString(R.string.phone_num, userData.getPhoneNumber(position))
-        holder.website.text = context.getString(R.string.website, userData.getWebsite(position))
-        holder.companyName.text = context.getString(R.string.company_name, userData.getCompanyName(position))
-        holder.catchPhrase.text = context.getString(R.string.catch_phrase, userData.getCatchPhrase(position))
+        holder.apply {
+            id.text = getFormattedString(R.string.id, userData.getId(position))
+            name.text = getFormattedString(R.string.name, userData.getName(position))
+            userName.text = getFormattedString(R.string.user_name, userData.getUserName(position))
+            email.text = getFormattedString(R.string.email, userData.getEmail(position))
+            phone.text = getFormattedString(R.string.phone_num, userData.getPhoneNumber(position))
+            website.text = getFormattedString(R.string.website, userData.getWebsite(position))
+            companyName.text = getFormattedString(R.string.company_name, userData.getCompanyName(position))
+            catchPhrase.text = getFormattedString(R.string.catch_phrase, userData.getCatchPhrase(position))
+            catchPhrase.text = getFormattedString(R.string.catch_phrase, userData.getCatchPhrase(position))
+        }
     }
 
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -45,4 +48,7 @@ class MyAdapter(private val userData: List<UserData>, private val context: Conte
         val companyName: TextView = itemView.company_name_view
         val catchPhrase: TextView = itemView.catch_phrase_view
     }
+
+    private fun getFormattedString(id: Int, inputText: String) =
+        context.getString(id, inputText)
 }
