@@ -20,9 +20,9 @@ class UserDataViewModel : ViewModel() {
             .subscribeBy(
                 onSuccess = { userData ->
                     userDataList.postValue(userData)
-                    networkCallSuccess.value = true
+                    networkCallSuccess.postValue(true)
                 },
-                onError = { networkCallSuccess.value = false })
+                onError = { networkCallSuccess.postValue(false)  })
 
     fun getNetworkCallSuccess(): LiveData<Boolean> = networkCallSuccess
 
