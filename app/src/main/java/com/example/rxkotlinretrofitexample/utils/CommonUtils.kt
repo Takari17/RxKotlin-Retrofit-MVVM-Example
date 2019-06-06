@@ -8,12 +8,6 @@ fun List<UserData>.getName(index: Int) = this[index].name
 
 fun List<UserData>.getUserName(index: Int) = this[index].username
 
-fun List<UserData>.getSuite(index: Int) = this[index].address.suite
-
-fun List<UserData>.getCity(index: Int) = this[index].address.city
-
-fun List<UserData>.getZipCode(index: Int) = this[index].address.zipcode
-
 fun List<UserData>.getEmail(index: Int) = this[index].email
 
 fun List<UserData>.getPhoneNumber(index: Int) = this[index].phone

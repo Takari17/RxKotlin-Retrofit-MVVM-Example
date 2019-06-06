@@ -1,5 +1,6 @@
 package com.example.rxkotlinretrofitexample.data.remote.response
 
+//todo check if you use all of these properties
 data class UserData(
     val address: Address,
     val company: Company,

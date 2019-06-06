@@ -1,4 +1,4 @@
-package com.example.rxkotlinretrofitexample.ui
+package com.example.rxkotlinretrofitexample.ui.features.userdata
 
 import android.content.Context
 import android.view.LayoutInflater

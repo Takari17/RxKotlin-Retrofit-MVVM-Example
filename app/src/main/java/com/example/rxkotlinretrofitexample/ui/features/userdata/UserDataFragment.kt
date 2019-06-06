@@ -1,4 +1,4 @@
-package com.example.rxkotlinretrofitexample.ui.fragments
+package com.example.rxkotlinretrofitexample.ui.features.userdata
 
 
 import android.os.Bundle
@@ -11,8 +11,6 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.rxkotlinretrofitexample.R
 import com.example.rxkotlinretrofitexample.data.remote.response.UserData
-import com.example.rxkotlinretrofitexample.ui.UserDataAdapter
-import com.example.rxkotlinretrofitexample.viewmodel.UserDataViewModel
 import kotlinx.android.synthetic.main.fragment_recycler_view.*
 
 

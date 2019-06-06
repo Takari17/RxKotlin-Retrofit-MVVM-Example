@@ -1,8 +1,7 @@
-package com.example.rxkotlinretrofitexample.data.remote.api
+package com.example.rxkotlinretrofitexample.data.remote.request
 
 import com.example.rxkotlinretrofitexample.data.remote.response.UserData
 import io.reactivex.Single
-import org.reactivestreams.Publisher
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory

@@ -1,4 +1,4 @@
-package com.example.rxkotlinretrofitexample.ui.fragments
+package com.example.rxkotlinretrofitexample.ui.common
 
 
 import android.os.Bundle

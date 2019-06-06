@@ -6,10 +6,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import com.example.rxkotlinretrofitexample.R
-import com.example.rxkotlinretrofitexample.ui.fragments.FailedFragment
-import com.example.rxkotlinretrofitexample.ui.fragments.ProgressBarFragment
-import com.example.rxkotlinretrofitexample.ui.fragments.RecyclerViewFragment
-import com.example.rxkotlinretrofitexample.viewmodel.UserDataViewModel
+import com.example.rxkotlinretrofitexample.ui.common.FailedFragment
+import com.example.rxkotlinretrofitexample.ui.common.ProgressBarFragment
+import com.example.rxkotlinretrofitexample.ui.features.userdata.UserDataFragment
+import com.example.rxkotlinretrofitexample.ui.features.userdata.UserDataViewModel
 
 class MainActivity : AppCompatActivity() {
 
@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showRecyclerViewFragment() =
-        replaceContainer(RecyclerViewFragment())
+        replaceContainer(UserDataFragment())
 
 
     private fun showFailedFragment() =

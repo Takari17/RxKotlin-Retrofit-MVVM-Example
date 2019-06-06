@@ -1,10 +1,10 @@
-package com.example.rxkotlinretrofitexample.viewmodel
+package com.example.rxkotlinretrofitexample.ui.features.userdata
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.rxkotlinretrofitexample.data.Repository
-import com.example.rxkotlinretrofitexample.data.remote.api.JsonPlaceHolderApi
+import com.example.rxkotlinretrofitexample.data.remote.request.JsonPlaceHolderApi
 import com.example.rxkotlinretrofitexample.data.remote.response.UserData
 import io.reactivex.rxkotlin.subscribeBy
 
