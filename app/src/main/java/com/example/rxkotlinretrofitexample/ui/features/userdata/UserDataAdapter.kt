@@ -34,7 +34,6 @@ class UserDataAdapter(private val userData: List<UserData>, private val context:
             website.text = getFormattedString(R.string.website, userData.getWebsite(position))
             companyName.text = getFormattedString(R.string.company_name, userData.getCompanyName(position))
             catchPhrase.text = getFormattedString(R.string.catch_phrase, userData.getCatchPhrase(position))
-            catchPhrase.text = getFormattedString(R.string.catch_phrase, userData.getCatchPhrase(position))
         }
     }
 
