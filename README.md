@@ -1,5 +1,5 @@
 # RxKotlin-Retrofit-MVVM-Example
-Fairly simple project I built once I felt confident in MVVM, RxJava, and Retrofit. The challenge of this project was understanding how all of these technologies and design patterns work together. 
+Fetches data from JSONPlaceholder's API and displays the data in a recycler view.
 
 <p float="left">
   <img src= "images/screenshot1.jpg" width="250" />
@@ -16,6 +16,3 @@ You can then install from android studio.
 * Retrofit
 * RxKotlin 
 * Lifecycle Libraries
-
-## Contributing 
-If you wish to contribute to this project email me first at takariharrison@gmail.com
